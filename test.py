@@ -1,5 +1,5 @@
 import random
-from sorting import selection_sort
+from sorting import selection_sort, bubble_sort
 
 any_numbers = random.sample(range(1, 1000), 42)
 
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     for name, lista in test_cases.items():
         print("\nCaso de teste: {}".format(name))
         print(lista)
-        selection_sort(lista)
+        bubble_sort(lista)
         print("\n Ordenado:")
         print(lista)
     print("*******************************")
