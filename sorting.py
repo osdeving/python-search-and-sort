@@ -16,4 +16,21 @@ def bubble_sort(lista):
                 # swap previous with next element
                 lista[i], lista[i+1] = lista[i+1], lista[i]
 
+def my_selection_sort(lista):
+    """
+
+    :type lista: object
+    """
+    n = len(lista)
+    min_index = lista[0]
+
+    for i in range(0, n):
+        min_index = lista[i]
+        for j in range(i + 1, n):
+            if lista[j] < lista[min_index]:
+                min_index = j
+        lista[i], lista[min_index] = lista[min_index], lista[i]
+    return lista
+
+
 
